@@ -1,0 +1,132 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+hr {
+    border: 5px solid rgb(135, 0, 0);
+    opacity: 1;
+}
+
+.nav-item {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: black;
+}
+
+.navbar-brand {
+    margin-left: 1em;
+    margin-right: 1em;
+    color:black;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/hero_image.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    text-align: right;
+
+    padding: 3em;
+    padding-top: 5em;
+
+    color: white;
+}
+
+h1 {
+    font-family: "Sedan SC", serif;
+}
+
+h1.tenant {
+    font-family: "Sedan SC", serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Gabriela", serif;
+}
+
+.tenants {
+    color: rgb(135, 0, 0);
+}
+
+.mission {
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+}
+
+p.mission {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+}
+
+.missionhead {
+    color: rgb(135, 0, 0);
+}
+
+.callaction {
+    background-color: rgb(135, 0, 0);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(207, 207, 207);
+}
+
+p.callaction {
+    font-family: "Outfit", sans-serif;
+    font-size: larger;
+}
+
+div.callaction {
+    font-family: "Outfit", sans-serif;
+    font-size: larger;
+}
+
+footer {
+    color: rgb(135, 0, 0);
+    font-weight: 250;
+}
+
+p.footer {
+    color: black;
+    font-family: "Outfit", sans-serif;
+}
+
+.contact {
+    color: black;
+}
+
+@media screen and (max-width: 1750px) {
+    #smlogoig {
+        width: 60px;
+        height: 60px;
+    }
+
+    #smlogofb {
+        width: 60px;
+        height: 60px;
+    }
+
+    #smlogotw {
+        width: 60px;
+        height: 60px;
+    }
+
+    #joinbtn {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    #donatebtn {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}
