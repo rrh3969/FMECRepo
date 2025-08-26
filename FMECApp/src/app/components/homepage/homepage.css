@@ -104,6 +104,18 @@ p.footer {
     color: black;
 }
 
+.carousel-wrapper {
+    width: 200vw;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.carousel-wrapper img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 1750px) {
     #smlogoig {
         width: 60px;
