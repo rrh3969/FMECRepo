@@ -1,0 +1,16 @@
+.panel {
+    display: none;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+.accordian {
+    background-color: rgb(135,0,0);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordian:hover {
+    background-color: rgb(114, 1, 1);
+}
