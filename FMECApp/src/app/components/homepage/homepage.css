@@ -49,10 +49,6 @@ p {
     font-family: "Gabriela", serif;
 }
 
-.tenants {
-    color: rgb(135, 0, 0);
-}
-
 .mission {
     font-family: "Oswald", sans-serif;
     font-size: 30px;
@@ -63,17 +59,12 @@ p.mission {
     font-weight: 300;
 }
 
-.missionhead {
+.callaction {
     color: rgb(135, 0, 0);
 }
 
-.callaction {
-    background-color: rgb(135, 0, 0);
-    color: white;
-}
-
 a {
-    color: white;
+    color: rgb(135, 0, 0);
 }
 
 a:hover {
@@ -88,16 +79,6 @@ p.callaction {
 div.callaction {
     font-family: "Outfit", sans-serif;
     font-size: larger;
-}
-
-footer {
-    color: rgb(135, 0, 0);
-    font-weight: 250;
-}
-
-p.footer {
-    color: black;
-    font-family: "Outfit", sans-serif;
 }
 
 .contact {
@@ -116,20 +97,29 @@ p.footer {
     object-fit: contain;
 }
 
+.top {
+    color: rgb(135, 0, 0);
+}
+
+.about {
+    background-color: rgb(135, 0, 0);
+    color: white;
+}
+
 @media screen and (max-width: 1750px) {
     #smlogoig {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
 
     #smlogofb {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
 
     #smlogotw {
-        width: 60px;
-        height: 60px;
+        width: 100px;
+        height: 100px;
     }
 
     #joinbtn {

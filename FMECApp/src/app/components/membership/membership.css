@@ -14,14 +14,18 @@
     color: white;
 }
 
-div.content {
-    background-color: rgb(135, 0, 0);
-    color: white;
-}
 
 hr {
     border: 5px solid rgb(135, 0, 0);
     opacity: 1;
+}
+
+div.row {
+    color: rgb(135, 0, 0);
+}
+
+.list {
+    color: black;
 }
 
 h1 {

@@ -9,6 +9,10 @@ import { Inmemoriam } from './components/inmemoriam/inmemoriam';
 
 export const routes: Routes = [
     {
+        path: '',
+        component: Homepage
+    },
+    {
         path: 'home',
         component: Homepage
     },
