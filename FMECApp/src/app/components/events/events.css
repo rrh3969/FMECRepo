@@ -14,6 +14,10 @@
     color: white;
 }
 
+.display-1 {
+    color: white;
+}
+
 hr {
     border: 5px solid rgb(135, 0, 0);
     opacity: 1;
@@ -21,4 +25,17 @@ hr {
 
 h1 {
     font-family: "Sedan SC", serif;
+}
+
+.title {
+    background-color: rgb(135, 0, 0);
+    color: white;
+}
+
+img {
+    max-width: 80%;
+}
+
+.heading {
+    color: rgb(135, 0, 0);
 }

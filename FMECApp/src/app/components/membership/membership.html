@@ -7,28 +7,18 @@
 <div class="content py-5">
 <div class="container">
   <div class="row text-center">
-    <app-joinbutton></app-joinbutton>
+    <app-ctabutton [link]="joinbutton.link" [type]="joinbutton.type" [logoclass]="joinbutton.logoclass" [logo]="joinbutton.logo" [text]="joinbutton.text"></app-ctabutton>
   </div>
   <div class="row">
     <h1>Why Volunteer?</h1>
   </div>
   <div class="row">
     <div class="col list">
-      <p>Our Center is operated by a dedicated group of volunteers. Volunteering at the FMEC can be a rewarding and fulfilling experience for individuals with various interests and backgrounds. Here are some compelling reasons why people should consider volunteering to help us: 
-<app-accordian></app-accordian>
-<ul>
-  <li>Preserving History: FMEC plays a crucial role in preserving the rich history and heritage of firefighting in Western New York. By volunteering, individuals can actively contribute to the preservation and conservation of firefighting artifacts, documents, and memorabilia for future generations to learn from and appreciate.</li>
-  <li>Supporting Firefighters: Volunteering with us is a way to show appreciation and support for firefighters and their contributions to society. It allows individuals to honor the bravery, sacrifice, and dedication of these heroes by actively promoting their stories and the challenges they face.</li>
-  <li>Promoting Fire & Life Safety: FMEC offers several educational programs and workshops aimed at promoting fire safety awareness and emergency preparedness within the community. Volunteers can play an essential role in spreading these crucial messages, helping to prevent fire-related accidents and injuries.</li>
-  <li>Community Engagement: Volunteering at FMEC provides an opportunity to connect with the local community and beyond. Volunteers can engage with visitors of all ages, interact with school groups, and participate in community events, fostering a sense of unity and camaraderie.</li>
-  <li>Learning Opportunities: The FMEC rich with historical knowledge and captivating stories. Volunteers can gain valuable insights into firefighting history, technology, and techniques, as well as the broader history of their local community.</li>
-  <li>Hands-On Experience: Volunteering at the Exhibit Center may offer hands-on experiences that allow individuals to interact with historical firefighting equipment, artifacts, and exhibits. This engagement can be both educational and exciting.</li>
-  <li>Personal Growth: Volunteering provides opportunities for personal growth and skill development. Volunteers can enhance their communication, organizational, and teamwork skills while also gaining a sense of accomplishment through their contributions.</li>
-  <li>Building Connections: Volunteering often brings people together with shared interests and passions. Volunteers can build meaningful connections with fellow volunteers, staff, and museum visitors, expanding their social networks.</li>
-  <li>Making a Difference: Every volunteer's efforts directly contribute to the success of the fire museum and its mission. Whether it's helping with guided tours, organizing events, or supporting educational initiatives, volunteers play a crucial role in making a positive impact.</li>
-  <li>Flexibility and Time Commitment: Volunteering with us is flexible, allowing individuals to contribute based on their availability and interests. Whether someone has a few hours to spare each week or a specific skill set to offer, there is often a place for everyone to contribute.</li>
-</ul>
-Overall, volunteering at the Firemen's Memorial Exhibit Center is an opportunity to be part of a meaningful cause, support the community, and contribute to the preservation of firefighting history and fire safety education. It can be a fulfilling experience that leaves a lasting impression on both volunteers and those who benefit from their efforts.
+      <p class="my-3">Our Center is operated by a dedicated group of volunteers. Volunteering at the FMEC can be a rewarding and fulfilling experience for individuals with various interests and backgrounds. Here are some compelling reasons why people should consider volunteering to help us:</p> 
+      <div nbgSlide *ngFor="let reason of reasons">
+        <app-accordian [title]="reason.title" [content]="reason.content"></app-accordian>
+      </div>
+<p class="my-3">Overall, volunteering at the Firemen's Memorial Exhibit Center is an opportunity to be part of a meaningful cause, support the community, and contribute to the preservation of firefighting history and fire safety education. It can be a fulfilling experience that leaves a lasting impression on both volunteers and those who benefit from their efforts.</p>
     </div>
     <div class="col">
       <img src="/volun1.jpg" alt="volunteers">
@@ -37,7 +27,7 @@ Overall, volunteering at the Firemen's Memorial Exhibit Center is an opportunity
     </div>
   </div>
   <div class="row text-center">
-    <app-joinbutton></app-joinbutton>
+    <app-ctabutton [link]="joinbutton.link" [type]="joinbutton.type" [logoclass]="joinbutton.logoclass" [logo]="joinbutton.logo" [text]="joinbutton.text"></app-ctabutton>
   </div>
 </div>
 </div>

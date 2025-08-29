@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-accordian',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './accordian.css'
 })
 export class Accordian {
+  @Input() title: string;
+  @Input() content: string;
+
   expand(event: {style: {display: string;};}) {
     if(event.style.display === "block") {
       event.style.display = "none";
@@ -14,5 +17,10 @@ export class Accordian {
     else {
       event.style.display = "block";
     }
+  }
+
+  constructor() {
+    this.title = '';
+    this.content = '';
   }
 }
