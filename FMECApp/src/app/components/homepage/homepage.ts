@@ -27,8 +27,10 @@ export class Homepage {
   }
   
   images = [
-    {name: 'building.jpg', caption: 'Building'},
-    {name: 'inside.jpg', caption: 'Inside'},
-    {name: 'truck.jpg', caption: 'Truck'},
+    {name: 'building.jpg', caption: 'building'},
+    {name: 'truck.jpg', caption: 'truck'},
+    {name: 'holdinghose.jpg', caption: 'holding hose'},
+    {name: 'parade.jpg', caption: 'parade'},
+    {name: 'oldtruck.jpg', caption: 'old truck'},
   ];
 }

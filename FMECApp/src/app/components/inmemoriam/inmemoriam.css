@@ -22,3 +22,12 @@ hr {
 h1 {
     font-family: "Sedan SC", serif;
 }
+
+h3 {
+    font-family: "Sedan SC", serif;
+}
+
+.title {
+    background-color: rgb(135, 0, 0);
+    color: white;
+}

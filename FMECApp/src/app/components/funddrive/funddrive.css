@@ -22,3 +22,12 @@ hr {
 h1 {
     font-family: "Sedan SC", serif;
 }
+
+.heading {
+    color: rgb(135, 0, 0);
+}
+
+img {
+    max-width: 80%;
+    margin: 1em;
+}
