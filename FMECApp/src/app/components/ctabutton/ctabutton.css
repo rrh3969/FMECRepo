@@ -1,0 +1,18 @@
+@media screen and (max-width: 1750px) {
+    * {
+        font-size: small;
+    }
+
+
+    button {
+        width: 200px;
+        height: 40px;
+        padding: 0em;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+}

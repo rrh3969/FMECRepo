@@ -32,3 +32,26 @@ img {
     max-width: 100%;
     margin: 1em;
 }
+
+.mobile {
+    display: none;
+}
+
+.content {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    iframe {
+        max-width: 350px;
+        max-height: 400px;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}

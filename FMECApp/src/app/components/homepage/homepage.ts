@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbCarouselModule, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Ctabutton } from '../ctabutton/ctabutton';
 
 @Component({
   selector: 'app-homepage',
   imports: [NgbModule, NgbCarouselModule, CommonModule, Ctabutton],
   templateUrl: '././homepage.html',
-  styleUrl: './homepage.css'
+  styleUrl: './homepage.css',
+  providers: [NgbCarouselConfig]
 })
 export class Homepage {
+  showNavigationArrows = false;
+	showNavigationIndicators = true;
+
   joinbutton = {
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSd_h9uWIKDUe0MYc0NBHoZn5M7asCCZ8pUdgW8bp9exNpS2XQ/viewform',
     type: 'btn btn-primary px-5 m-3',
@@ -27,10 +31,16 @@ export class Homepage {
   }
   
   images = [
-    {name: 'building.jpg', caption: 'building'},
-    {name: 'truck.jpg', caption: 'truck'},
-    {name: 'holdinghose.jpg', caption: 'holding hose'},
-    {name: 'parade.jpg', caption: 'parade'},
-    {name: 'oldtruck.jpg', caption: 'old truck'},
+    '/building.jpg',
+    '/truck.jpg',
+    '/holdinghose.jpg',
+    '/parade.jpg',
+    '/oldtruck.jpg',
   ];
+
+  constructor(config: NgbCarouselConfig) {
+		// customize default values of carousels used by this component tree
+		config.showNavigationArrows = true;
+		config.showNavigationIndicators = true;
+	}
 }

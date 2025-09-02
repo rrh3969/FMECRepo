@@ -3,3 +3,25 @@ footer {
     color: white;
     font-weight: 250;
 }
+
+* {
+    overflow-x: hidden;
+}
+
+.menubutton {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .menubutton {
+        display: block;
+    }
+
+    footer {
+        font-size: smaller;
+    }
+}

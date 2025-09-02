@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { Article } from '../article/article';
+import { Articleflip } from '../articleflip/articleflip';
 
 @Component({
   selector: 'app-news',
-  imports: [Article],
+  imports: [Article, Articleflip],
   templateUrl: './news.html',
   styleUrl: './news.css'
 })
