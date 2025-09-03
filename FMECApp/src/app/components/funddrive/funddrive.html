@@ -5,7 +5,7 @@
         </div>
 </div>
 
-<div class="container">
+<div class="container desktop">
   <div class="row my-5">
     <div class="col">
       <h1 class="heading">You To The Rescue!</h1>
@@ -26,6 +26,29 @@ Thank you for your time and consideration. We look forward to welcoming you as a
     </div>
   </div>
   <div class="row text-center my-5">
+    <app-ctabutton [link]="donatebutton.link" [type]="donatebutton.type" [logoclass]="donatebutton.logoclass" [logo]="donatebutton.logo" [text]="donatebutton.text"></app-ctabutton>
+  </div>
+</div>
+
+<div class="mobile mx-2 my-5">
+  <div>
+    <h1 class="heading">You To The Rescue!</h1>
+      <p>At Firemen's Memorial Exhibit Center, we take great pride in being a beacon of knowledge, remembrance, and safety, dedicated to honoring the brave men and women who have risked their lives to protect our communities from the ravages of fire. Our Center houses an extensive collection of firefighting artifacts, documents, and memorabilia, providing an immersive and educational experience for visitors of all ages.
+<br><br>
+Here's how your generous donation can contribute to our vital cause:</p>
+<div nbgSlide *ngFor="let reason of reasons">
+        <app-accordian [title]="reason.title" [content]="reason.content"></app-accordian>
+      </div>
+      <p class="my-3">Your generosity will help us continue to be a vibrant hub of knowledge, history, and fire safety for our community and beyond. Together, we can preserve our firefighting legacy and build a safer future for everyone.
+<br><br>
+Thank you for your time and consideration. We look forward to welcoming you as a valued supporter of The Firemen's Memorial Exhibit Center!</p>
+  </div>
+  <div>
+    <img src="/parade.jpg" alt="parade">
+      <img src="/holdinghose.jpg" alt="holding hose">
+      <img src="/memorial.jpg" alt="memorial">
+  </div>
+  <div class="text-center">
     <app-ctabutton [link]="donatebutton.link" [type]="donatebutton.type" [logoclass]="donatebutton.logoclass" [logo]="donatebutton.logo" [text]="donatebutton.text"></app-ctabutton>
   </div>
 </div>

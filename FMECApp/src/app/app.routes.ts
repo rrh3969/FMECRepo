@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { Routes, provideRouter, withInMemoryScrolling } from '@angular/router';
 import { Homepage } from './components/homepage/homepage';
 import { News } from './components/news/news';
 import { Membership } from './components/membership/membership';
@@ -41,3 +41,13 @@ export const routes: Routes = [
         component: Inmemoriam
     },
 ];
+
+export const appConfig = {
+      providers: [
+        provideRouter(routes,
+          withInMemoryScrolling({
+            scrollPositionRestoration: 'top', // Scrolls to the top on navigation
+          })
+        )
+      ]
+};

@@ -54,4 +54,8 @@ img {
     .mobile {
         display: block;
     }
+
+    img {
+        max-width: 350px;
+    }
 }

@@ -39,3 +39,21 @@ img {
 .heading {
     color: rgb(135, 0, 0);
 }
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
