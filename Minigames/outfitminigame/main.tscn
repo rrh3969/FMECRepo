@@ -25,7 +25,7 @@ outfits = [ExtResource("2_4a4w8"), ExtResource("3_ubk7e"), ExtResource("4_g562m"
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -506)
+position = Vector2(0, -403)
 texture = ExtResource("2_4a4w8")
 
 [node name="SubmitButton" type="Button" parent="."]
@@ -33,6 +33,35 @@ offset_left = -130.0
 offset_top = 683.0
 offset_right = 132.0
 offset_bottom = 792.0
+theme_override_font_sizes/font_size = 32
 text = "Submit"
 
+[node name="Timer" type="RichTextLabel" parent="."]
+offset_left = -362.0
+offset_top = -757.0
+offset_right = -140.0
+offset_bottom = -671.0
+theme_override_font_sizes/normal_font_size = 32
+text = "Time: 0"
+
+[node name="TimerEnd" type="RichTextLabel" parent="."]
+visible = false
+offset_left = -142.0
+offset_top = -106.0
+offset_right = 280.0
+offset_bottom = 44.0
+theme_override_font_sizes/normal_font_size = 64
+text = "Time: 0"
+
+[node name="ResetButton" type="Button" parent="."]
+visible = false
+offset_left = -155.0
+offset_top = 104.0
+offset_right = 149.0
+offset_bottom = 262.0
+mouse_filter = 1
+theme_override_font_sizes/font_size = 64
+text = "Retry"
+
 [connection signal="pressed" from="SubmitButton" to="." method="_on_submit_button_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
