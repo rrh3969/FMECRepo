@@ -11,7 +11,7 @@ import { Ctabutton } from '../ctabutton/ctabutton';
   providers: [NgbCarouselConfig]
 })
 export class Homepage {
-  showNavigationArrows = false;
+  showNavigationArrows = true;
 	showNavigationIndicators = true;
 
   joinbutton = {

@@ -1,0 +1,24 @@
+<div class="jumbotron jumbotron-fluid">
+        <div class="container text-right">
+          <h1 class="display-1">Members Only</h1>
+          <hr>
+        </div>
+</div>
+
+<div class="m-5 passwordenter">
+    <label for="pass">Password:</label><br>
+    <input #memberPassword type="password" id="pass" name="password" required /><br>
+    <button type="button" class="btn btn-primary my-3" (click)="checkpassword(membercontent, memberPassword.value)">Submit</button>
+</div>
+
+<div #membercontent class="content container m-5">
+    <div class="row my-2">
+        <h1>Bylaws</h1>
+    </div>
+    <div class="row my-2">
+        <h1>Policies</h1>
+    </div>
+    <div class="row my-2">
+        <h1>Volunteer Form</h1>
+    </div>
+</div>

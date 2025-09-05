@@ -6,6 +6,7 @@ import { Aboutus } from './components/aboutus/aboutus';
 import { Events } from './components/events/events';
 import { Funddrive } from './components/funddrive/funddrive';
 import { Inmemoriam } from './components/inmemoriam/inmemoriam';
+import { Membersonly } from './components/membersonly/membersonly';
 
 export const routes: Routes = [
     {
@@ -39,6 +40,10 @@ export const routes: Routes = [
     {
         path: 'inmemoriam',
         component: Inmemoriam
+    },
+    {
+        path: 'membersonly',
+        component: Membersonly
     },
 ];
 

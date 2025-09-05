@@ -1,0 +1,32 @@
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/hero_image.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    text-align: right;
+
+    padding: 3em;
+    padding-top: 5em;
+
+    color: white;
+}
+
+hr {
+    border: 5px solid rgb(135, 0, 0);
+    opacity: 1;
+}
+
+h1 {
+    font-family: "Sedan SC", serif;
+}
+
+.content {
+    display: none;
+
+    h1 {
+       color: rgb(135, 0, 0); 
+    }
+}
